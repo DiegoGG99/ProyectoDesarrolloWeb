@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="../img/memoji.PNG" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <title>Contador</title>
+    <link rel="stylesheet" href="../CSS/styles.css"/>
+  </head>
+  <body>
+          
+     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+         <a class="navbar-brand" href="../index.html">
+             <img src="../img/memoji.PNG" width="30" height="30" class="d-inline-block align-top" alt="diego-memoji" >
+             Diego
+            </a>
+             <div class="navbar-nav">
+                <a class="nav-link" href="../pages/Portafolio.html">Portafolio</a>
+                <a class="nav-link" href="../pages/CV.html">CV</a>
+                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="container-portafolio">
+      <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="../img/counter.png" alt="Proyecto Counter">
+              <div class="card-body">
+                <p class="card-title">Contador implementado con compuertas lógicas.</p>
+                <p id="desccounter">El proyecto fue diseñado con el software LogicCircuit para la materia de diseño lógico. El proyecto requería un contador que llegara hasta el número 99 y que se implementara un switch que activara el modo ascendente o descendente dependiendo de su estado. El reto para el desarrollo de este proyecto fue la correcta implementación de las compuertas lógicas y del switch para que funcionara bien tanto en la cuenta descendente como la ascendente. El problema fue que al modificar la cuenta de uno también se modificaba la otra cuenta, haciendo que el contador de decenas no funcionara de manera correcta. El problema se solucionó cambiando la lógica del circuito, de Suma de Productos (SoP) a Producto de Sumas (PoS). La implementación que se pensó para este proyecto fue el crear un sistema con sensores que detectara cuando una persona entra o sale de una habitación, y si la cuenta llega a un determinado número, permitir solo la salida de la habitación, pero no la entrada (por la sana distancia).
+                </p>
+              </div>
+            </div>
+         </div>
+
+          <div class="col-md-8">
+              <p id="categoria">Categoría: Electrónica</p>
+              <p id="palabrasclave">Palabras clave: Circuito, Diseño Lógico, Compuertas Lógicas, Implementación</p>
+          <p id="Titulocpp">Funcionamiento del circuito</p>
+          <img class="img-fluid" src="../img/Proyectocounter.gif" alt="Funcionamiento Counter">
+
+          </div>
+      </div>   
+  </div>
+  <footer>
+      <div class="container-fluid">
+          <div class="row justify-content-around">
+              <div class="col-md-2">
+                <img src="../img/memoji.PNG" height="50" width="50">
+              </div>
+              <div class="col-md-4 justify-content-center">
+                  <p class="footerlinks">
+                      <a href="index.html">Inicio</a>
+
+                      <a href="pages/Portafolio.html">Portafolio</a>
+                      
+                      <a href="pages/CV.html">CV</a>
+                      
+                      <a href="pages/Contacto.html">Contacto</a>
+                    </p>
+              </div>
+              <div class="col-md-4">
+                <div class="row justify-content-around" id="socialesfooter">
+                    <div class="col-md-1 justify-content-around">
+                        <a href="https://www.facebook.com/profile.php?id=100019508301628"><img src="../img/fb.png" width="50" height="50"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://www.instagram.com/saydiegog/"><img src="../img/ig.png" width="50" height="50"></a>
+                    </div>   
+                </div>
+              </div>
+          </div>
+          <div class="row justify-content-center" id="copyright">
+            <p> © 2020 Copyright: Diego G.</p>
+            </div>
+      </div>
+   </footer>
+  </body>
+</html>

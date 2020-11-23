@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    <title>Proyectos</title>
+    
+
+</head>
+<body>
+        <a href="index.html" class="btn btn-primary">Regresar a la página principal</a>
+<div id="adminonly">
+   <div class="container p-4">
+       <div class="row">
+           <div class="col-md-6">
+               <div class="card">
+                   <div class ="card-body">
+                    <form id="proyect-form">
+                        <div class="form-group">
+                            <h1>Agregar un Proyecto</h1>
+                            <input type="text" id="proyect-title" class ="form-control" placeholder="Título del proyecto" autofocus>
+                        </div>
+                         <div class="form-group">
+                             <textarea id="proyect-description" class="form-control" placeholder="Descripción del proyecto"></textarea>
+                         </div>
+
+                        <div class="form-group">
+                            <label>Categoría: </label>
+                            <select id="category" name="category" required>
+                              <option value="Programación">Programación</option>
+                              <option value="Electrónica">Electrónica</option>
+                              <option value="Linux">Linux</option>
+                              <option value="Desarrollo Web">Desarrollo Web</option>
+                            </select>
+                        </div>
+                        <div class ="form-group">
+                            <label for="proyect-image">Imagen de Portada</label>
+                            <input type="file" class="form-control-file" id="proyect-image">
+                        </div>
+                    </div>
+                        <button class="btn btn-primary" id="btn-proyect-form">
+                            Guardar
+                        </button>
+                    </form>
+                 </div>
+               </div>
+           </div>
+           <div class="col-md-6" id="proyects-container"></div>
+       </div>
+</div>
+    <div id = "noadmins">
+   </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAKGTe81c4255esPEw824hZi_8w9kC42eo",
+    authDomain: "fb-crud-5ba4b.firebaseapp.com",
+    databaseURL: "https://fb-crud-5ba4b.firebaseio.com",
+    projectId: "fb-crud-5ba4b",
+    storageBucket: "fb-crud-5ba4b.appspot.com",
+    messagingSenderId: "52646041247",
+    appId: "1:52646041247:web:fecf9803f4bbe295e5b4aa"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/verification.js"></script>
+</body>
+</html>

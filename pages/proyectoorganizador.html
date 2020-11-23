@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="../img/memoji.PNG" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <title>Organizador</title>
+    <link rel="stylesheet" href="../CSS/styles.css"/>
+  </head>
+  <body>
+          
+     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+         <a class="navbar-brand" href="../index.html">
+             <img src="../img/memoji.PNG" width="30" height="30" class="d-inline-block align-top" alt="diego-memoji" >
+             Diego
+            </a>
+             <div class="navbar-nav">
+                <a class="nav-link" href="../pages/Portafolio.html">Portafolio</a>
+                <a class="nav-link" href="../pages/CV.html">CV</a>
+                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="container-portafolio">
+      <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="../img/console.png" alt="Proyecto Organizador de descargas">
+              <div class="card-body">
+                <p class="card-title"></p>
+                <p id="desccounter">El proyecto fue desarrollado utilizando la terminal de Linux y BASH (Lenguaje de órdenes) para uso personal. Se especificó la ruta donde el programa debe buscar los archivos (en este caso se seleccionó la carpeta de descargas), se lee todo lo que está dentro de la carpeta, y dependiendo de la extensión de los archivos (Video, Foto, Música, Documento) los archivos serán movidos a su carpeta correspondiente elegida por el usuario. La dificultad de realizar este proyecto fue hacer que la terminal leyera los archivos uno por uno para poder moverlos a donde deberían ir. Esto se logró haciendo primero que se leyera la lista completa de archivos que se encuentran dentro de la carpeta, para después con un ciclo for separar línea por línea cada archivo, para finalmente, mover cada archivo a su nuevo directorio dependiendo de su extensión. Se diseñó de esta manera (sin GUI) para que el usuario pueda automatizar este proceso a su elección, en mi caso, decidí que este proceso lo lleve a cabo mi Laptop cada vez que se inicia sesión. 
+                </p>
+              </div>
+            </div>
+         </div>
+
+          <div class="col-md-8">
+              <p id="categoria">Categoría: Programación</p>
+              <p id="palabrasclave">Palabras clave: Programación, BASH, If, MacOS, Linux, Terminal</p>
+          <p id="Titulocpp">Funcionamiento del código</p>
+          <img class="img-fluid" src="../img/proyectoorganizador.gif" alt="Funcionamientocpp">
+          </div>
+      </div>   
+  </div>
+  <footer>
+      <div class="container-fluid">
+          <div class="row justify-content-around">
+              <div class="col-md-2">
+                <img src="../img/memoji.PNG" height="50" width="50">
+              </div>
+              <div class="col-md-4 justify-content-center">
+                  <p class="footerlinks">
+                      <a href="index.html">Inicio</a>
+
+                      <a href="pages/Portafolio.html">Portafolio</a>
+                      
+                      <a href="pages/CV.html">CV</a>
+                      
+                      <a href="pages/Contacto.html">Contacto</a>
+                    </p>
+              </div>
+              <div class="col-md-4">
+                <div class="row justify-content-around" id="socialesfooter">
+                    <div class="col-md-1 justify-content-around">
+                        <a href="https://www.facebook.com/profile.php?id=100019508301628"><img src="../img/fb.png" width="50" height="50"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://www.instagram.com/saydiegog/"><img src="../img/ig.png" width="50" height="50"></a>
+                    </div>   
+                </div>
+              </div>
+          </div>
+          <div class="row justify-content-center" id="copyright">
+            <p> © 2020 Copyright: Diego G.</p>
+            </div>
+      </div>
+   </footer>
+  </body>
+</html>
